@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+<title>Medicine Recogniser</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<center>
+<div class="container">
+
+<h1 class="btn-warning">Medicine Recogniser</h1>
+<h3>This Model can Recognise These Medicines</h3>
+<h3 class="alert alert-danger">Cough Medicine | Paracetamol | Strepsils</h3>
+<br>
+
+<div>
+<h5><b>Webcam View- </b></h5>
+<div id="camera"></div>
+</div>
+
+<div>
+<h5><b>Result- </b></h5>
+<div id="result"></div>
+</div>
+<br>
+<button class="btn btn-success" onclick="capture_img()">Capture Image</button>
+<button class="btn btn-info" onclick="recognise_img()">Identify Image</button>
+<h4>Result: </h4><span id="medicine"></span>
+<h4>Accuracy: </h4><span id="accuracy"></span>
+<br>
+<h5 id="medicine_info"></h5>
+
+</div>
+</center>
+
+<script src="main.js"></script>
+
+
+</body>
+
+</html>
